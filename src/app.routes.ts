@@ -78,6 +78,26 @@ export const APP_ROUTES: Routes = [
     loadComponent: () => import('./components/pages/projects-page/projects-page.component').then(m => m.ProjectsPageComponent)
   },
   {
+    path: 'wohnbauprojekte/panoramahang-6-10',
+    loadComponent: () => import('./components/pages/project-panoramahang-6-10-page/project-panoramahang-6-10-page.component').then(m => m.ProjectPanoramahang610PageComponent)
+  },
+  {
+    path: 'wohnbauprojekte/panoramahang-19',
+    loadComponent: () => import('./components/pages/project-panoramahang-19-page/project-panoramahang-19-page.component').then(m => m.ProjectPanoramahang19PageComponent)
+  },
+  {
+    path: 'wohnbauprojekte/tulpenweg-4',
+    loadComponent: () => import('./components/pages/project-tulpenweg-4-page/project-tulpenweg-4-page.component').then(m => m.ProjectTulpenweg4PageComponent)
+  },
+  {
+    path: 'wohnbauprojekte/tulpenweg-1',
+    loadComponent: () => import('./components/pages/project-tulpenweg-1-page/project-tulpenweg-1-page.component').then(m => m.ProjectTulpenweg1PageComponent)
+  },
+  {
+    path: 'wohnbauprojekte/rosenweg',
+    loadComponent: () => import('./components/pages/project-rosenweg-page/project-rosenweg-page.component').then(m => m.ProjectRosenwegPageComponent)
+  },
+  {
     path: 'kontakt',
     loadComponent: () => import('./components/pages/contact-page/contact-page.component').then(m => m.ContactPageComponent)
   },
