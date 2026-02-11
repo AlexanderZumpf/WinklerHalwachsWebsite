@@ -1,0 +1,52 @@
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800 dark:bg-slate-900/95">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-24">
+      <a (click)="closeMenu()" routerLink="/home" class="flex-shrink-0 flex items-center gap-4">
+        <div class="w-16 h-16 bg-white flex items-center justify-center p-1 border border-slate-100 dark:border-slate-800 shadow-sm rounded-lg overflow-hidden">
+          <img alt="Winkler & Halwachs Logo" class="object-contain w-full h-full" src="https://storage.googleapis.com/prompt-gallery/prod/images/be52a122-8353-487e-a0e1-0da5f0d922a6/1.jpeg"/>
+        </div>
+        <div class="hidden sm:block">
+          <span class="block text-xl font-bold text-primary dark:text-white tracking-tight leading-none">Winkler & Halwachs</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-brand-accent font-semibold">Tischlereibetrieb</span>
+        </div>
+      </a>
+      
+      <div class="flex items-center gap-2">
+        <nav class="hidden md:flex space-x-8">
+          <a routerLink="/home" routerLinkActive="nav-link-active font-bold" [routerLinkActiveOptions]="{exact: true}" class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-brand-accent transition-colors">Startseite</a>
+          <a routerLink="/stiegen" routerLinkActive="nav-link-active font-bold" class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-brand-accent transition-colors">Stiegen</a>
+          <a routerLink="/innentueren" routerLinkActive="nav-link-active font-bold" class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-brand-accent transition-colors">Innentüren</a>
+          <a routerLink="/wohnbauprojekte" routerLinkActive="nav-link-active font-bold" class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-brand-accent transition-colors">Wohnbauprojekte</a>
+          <a routerLink="/kontakt" routerLinkActive="nav-link-active font-bold" class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-brand-accent transition-colors">Kontakt</a>
+        </nav>
+        
+        <button (click)="themeService.toggleTheme()" title="Toggle theme" class="p-2 rounded-full text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+          @if (themeService.theme() === 'dark') {
+            <span class="material-symbols-outlined">light_mode</span>
+          } @else {
+            <span class="material-symbols-outlined">dark_mode</span>
+          }
+        </button>
+
+        <div class="md:hidden">
+          <button (click)="toggleMenu()" class="p-2 text-slate-600 dark:text-slate-300 hover:text-primary">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  @if (isMenuOpen()) {
+    <div class="md:hidden bg-white dark:bg-slate-900 absolute w-full left-0 border-t border-slate-200 dark:border-slate-800 shadow-lg">
+      <nav class="flex flex-col items-center space-y-4 py-4">
+        <a (click)="closeMenu()" routerLink="/home" routerLinkActive="nav-link-active font-bold" [routerLinkActiveOptions]="{exact: true}" class="text-slate-600 dark:text-slate-300 hover:text-brand-accent font-medium transition-colors">Startseite</a>
+        <a (click)="closeMenu()" routerLink="/stiegen" routerLinkActive="nav-link-active font-bold" class="text-slate-600 dark:text-slate-300 hover:text-brand-accent font-medium transition-colors">Stiegen</a>
+        <a (click)="closeMenu()" routerLink="/innentueren" routerLinkActive="nav-link-active font-bold" class="text-slate-600 dark:text-slate-300 hover:text-brand-accent font-medium transition-colors">Innentüren</a>
+        <a (click)="closeMenu()" routerLink="/wohnbauprojekte" routerLinkActive="nav-link-active font-bold" class="text-slate-600 dark:text-slate-300 hover:text-brand-accent font-medium transition-colors">Wohnbauprojekte</a>
+        <a (click)="closeMenu()" routerLink="/kontakt" routerLinkActive="nav-link-active font-bold" class="text-slate-600 dark:text-slate-300 hover:text-brand-accent font-medium transition-colors">Kontakt</a>
+      </nav>
+    </div>
+  }
+</header>
