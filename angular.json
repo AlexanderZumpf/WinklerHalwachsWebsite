@@ -12,12 +12,18 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "browser": "index.tsx",
+            "tsConfig": "tsconfig.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
             "outputPath": {
               "base": "./dist",
               "browser": "."
-            },
-            "browser": "index.tsx",
-            "tsConfig": "tsconfig.json"
+            }
           },
           "configurations": {
             "production": {
