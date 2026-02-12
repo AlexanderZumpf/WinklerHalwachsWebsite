@@ -94,36 +94,12 @@
   <section class="max-w-7xl mx-auto px-8 pb-24">
     <h3 class="text-2xl font-bold text-primary dark:text-white mb-10">Projektreferenzen &amp; Inspirationen</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      @for(item of pictureList; track item){
       <div class="aspect-square overflow-hidden rounded-lg group">
-        <img alt="Holmstiege Projekt 1"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ_E-54XusiKffLixD8QHpcDxpWdVoz9ESHf3n3-BPNTuCpRO9XL_kI95XKTk1s-1l0uTn1X6utYTkruanzRysc1kNZSMcZKHTm9cm9csL_LLII5pT4lwCSZgguC7r27F-8M2VnPrtKwY5WBOJZjiSWH-wE3q8DB_rREjToxSWtVnAE4vXSI86qHUVQX-xiBnFa6FaCow3nKklpydYI8LVHEr_aHHwpb9nrz4vCX8L6i5LV54SiWpuW8xubin9VqS2g-32ZKZsyxo" />
+        <img alt="{{item}}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          src="pictures/Stiegen/Holm/{{item}}" />
       </div>
-      <div class="aspect-square overflow-hidden rounded-lg group">
-        <img alt="Holmstiege Projekt 2"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFvef3xmMmVCpoL1S4TysqMkzYGD4wkHnlKH-u5GkaeKIaPTVNBHhu6sDl0xbt8gnn_Wq06gL7qws9LX3mfWcN4DedICQNBms3l-w_2tITE1HBI03tNxcrfjv78f1Dt26upau7r2mCw6rYbD0OX3BD7KRrmaQ9VGunxncnIE8LiiSZirnVQnhq_Rvr4raQEnVo-FN2ZFpzUd1mZVVi5dIxubx82n3MZUk721Cn74C77BnJz0X-8s9IKEu_cP2g6EK6oA1INuxyQkg" />
-      </div>
-      <div class="aspect-square overflow-hidden rounded-lg group">
-        <img alt="Holmstiege Projekt 3"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeEbq0y8XrbmnOh2qyt7Nvv-LY-cBplyOgAh-E-dUX51K8Zf8yobPs2H9O3ZdYq_P44zEV4aQ-zWIuiGcocKkjL94wf_AnuAYn6_2s_ES47tC11qViV5dd8cYZfBS_xvS_ii5hZYrf9OaUH8niQctEmJiAFBOJsJQK23XVKKJPRZR35P2bVSelC9mDyBduyCL4NHwwjH-awhX0ulbS4BlTsTKfm4wv5bXKU7Vv04zX9JkWPlDQMdQMzpc_JAxSUu7_gjhbCk5_EVg" />
-      </div>
-      <div class="aspect-square overflow-hidden rounded-lg group">
-        <img alt="Holmstiege Projekt 4"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRhAQePVDEQWthtHJ7s5UKK4K8qZvaca9TWhLO-O4I9Z7ycomhq5OeChBWNOF7gt2TnIryb943VWShW59efEB4ZFN--EuOk1d5S8vVtCNkYVGvvWxckLhXgrXGwGGk-o3kXe4z2-p-9S8h2MxtJKZ5khY91w0QwOp_awQ8Ws2lDO2pJANVw5x1XTHcDPLnyip4ogiD45SpaoZKBrXGBRkA440LtP8AmfP10tPLe79wkBFJv6kH05o12_BR3dQFVs9bzk3RUmS__fU" />
-      </div>
-      <div class="aspect-square overflow-hidden rounded-lg group">
-        <img alt="Holmstiege Projekt 5"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhmh9osq6vKfxsZI-aecCVYiDUZ64h1XLRU-g1Ka9bRhsHB9YCWFspb0sl1Njg-u17EkyfsAxty4A3Oj_87xhDBg1T_uRg7jaM94vV23M7Z8XUa5Fdqa4w6UOlUIBTR5e0E5ezL9q_mdRnZivKcYDaaWedpUOc7v-623mhX0KPkWZgmHD9jqpu9W0fq9lbU1OjPtt4EfLrRtpzhZk2rHgOx5rQBO_qaBTmOOQ6CfVvLiI8ha5PQV8IYWRP5MSizjN7ArIKBdIJ4j4" />
-      </div>
-      <div class="aspect-square overflow-hidden rounded-lg group">
-        <img alt="Holmstiege Projekt 6"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzsjR6Ug8yUJaK6tMCB-G9JwRbW_Fn0VcRq9dlvwu6Mo09C4EdMwal1BAd1o5RMHQj3wEEKzdAv0O4HralLqwb5QZaFY0fiIB2bbBGEr6uxaDx3lbLhve3i36Pssfi5jj_mHP-RCcOQcuIPMo91AN2LAkoXQHlFs3VjVH7dqgECltDMISfFtmgDk9zCWU5bTVpzfAlHObQeraVMPo7vVNkH1TKAHGJ4qPT23e7KWBKcA1iDEviwxxgesuQfrvD9unGCmxAZVKWcfc" />
-      </div>
+      }
     </div>
   </section>
 
