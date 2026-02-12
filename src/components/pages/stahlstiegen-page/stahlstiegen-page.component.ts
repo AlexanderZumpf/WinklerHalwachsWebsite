@@ -9,7 +9,7 @@ import { RouterLink } from '@angular/router';
 })
 export class StahlstiegenPageComponent {
   pictureList = [
-    "1.png", "2.jpg", "3.jpg", "4.jpeg", "5.jpg",
+    "2.jpg", "3.jpg", "4.jpeg", "5.jpg",
     "6.jpeg", "7.jpeg", "8.jpg", "9.jpg", "10.jpg",
     "11.jpg", "12.jpeg", "13.jpg", "14.jpeg", "15.jpeg",
     "16.jpeg", "17.jpeg", "18.jpg", "19.jpg", "20.jpg",
