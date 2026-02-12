@@ -92,8 +92,17 @@
   </section>
   <section class="max-w-7xl mx-auto px-8 pb-24">
     <h3 class="text-2xl font-bold text-primary dark:text-white mb-10">Inspirationen &amp; Referenzen</h3>
+
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      @for(item of pictureList; track item){
       <div class="aspect-square overflow-hidden rounded-lg group">
+        <img alt="{{item}}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          src="pictures/Stiegen/Beton/{{item}}" />
+      </div>
+      }
+
+      <!--<div class="aspect-square overflow-hidden rounded-lg group">
         <img alt="Betonstiege Detail 1"
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUkNN4N8J8lj22lMhZQCMcy8n26f8Vbw4mUxr0w4hyzWN3bZP0Q3NGvATgvmHb9orM0SvapZ6O-vDFzFIrlhOff7cfASJyZXXpKJeq1l5323WoYYPhObuDTNhxkTCOSruMyt1E-bTsbAMg_jOOUnMZNU-MqVth3IFrj4a_s9uQC7srhTq_0qvE7ZhSmj6wSh00vwdO6sp-JsxpFr_SZfqMLs3D1nC5GLTDgNWT_bI0jFJ6MCQfLj3jDCKBpMq37kG0gmsnRmmkR1I" />
@@ -122,7 +131,7 @@
         <img alt="Betonstiege Detail 6"
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzsjR6Ug8yUJaK6tMCB-G9JwRbW_Fn0VcRq9dlvwu6Mo09C4EdMwal1BAd1o5RMHQj3wEEKzdAv0O4HralLqwb5QZaFY0fiIB2bbBGEr6uxaDx3lbLhve3i36Pssfi5jj_mHP-RCcOQcuIPMo91AN2LAkoXQHlFs3VjVH7dqgECltDMISfFtmgDk9zCWU5bTVpzfAlHObQeraVMPo7vVNkH1TKAHGJ4qPT23e7KWBKcA1iDEviwxxgesuQfrvD9unGCmxAZVKWcfc" />
-      </div>
+      </div>-->
     </div>
   </section>
   <section class="bg-slate-100 dark:bg-slate-900/50 py-24">
