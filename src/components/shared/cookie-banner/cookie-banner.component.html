@@ -1,0 +1,18 @@
+@if (cookieService.consentState() === 'pending') {
+  <div class="fixed bottom-0 left-0 right-0 z-50 p-6 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm border-t border-slate-200 dark:border-slate-800 shadow-2xl animate-fade-in-up">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="text-sm text-slate-700 dark:text-slate-300">
+        <h4 class="font-bold text-base text-primary dark:text-white mb-2">Cookie-Einstellungen</h4>
+        <p>Wir verwenden Cookies, um die grundlegende Funktionalität unserer Website sicherzustellen. Mit Ihrer Zustimmung verwenden wir zusätzliche Cookies für Analysezwecke, um Ihr Nutzererlebnis zu verbessern. Sie können Ihre Auswahl jederzeit ändern.</p>
+      </div>
+      <div class="flex-shrink-0 flex items-center gap-4">
+        <button (click)="cookieService.acceptNecessary()" class="px-6 py-3 rounded-md text-sm font-semibold bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+          Nur notwendige
+        </button>
+        <button (click)="cookieService.acceptAll()" class="px-6 py-3 rounded-md text-sm font-semibold bg-brand-accent text-white hover:bg-primary dark:hover:bg-brand-accent/80 transition-colors">
+          Alle akzeptieren
+        </button>
+      </div>
+    </div>
+  </div>
+}
