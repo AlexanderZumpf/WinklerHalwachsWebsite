@@ -13,7 +13,7 @@ echo "Clearing old files..."
 sudo rm -rf $DEPLOY_PATH/*
 
 echo "Copying new build..."
-sudo cp -r dist/$APP_NAME/* $DEPLOY_PATH/
+sudo cp -r dist/* $DEPLOY_PATH/
 
 echo "Fixing permissions..."
 sudo chown -R www-data:www-data $DEPLOY_PATH
